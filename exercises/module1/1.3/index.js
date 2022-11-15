@@ -14,6 +14,7 @@ function onClickHandlerForBtn() {
         }
     }
     compteur++;
+    console.log(compteur);
 }
 
 console.log(timeAlert()); 
