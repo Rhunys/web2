@@ -1,7 +1,7 @@
 let btn = document.querySelector('#myBtn');
 const message1 = "Bravo, bel échauffement !";
 const message2 = "Vous êtes passé maître en l'art du clic !";
-let compteur = 0;
+let compteur = 1;
 
 btn.addEventListener('click', onClickHandlerForBtn);
 
