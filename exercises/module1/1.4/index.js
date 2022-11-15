@@ -1,6 +1,6 @@
-const redLight = document.querySelector('#redLight');
-const orangeLight = document.querySelector('#orangeLight');
-const greenLight = document.querySelector('#greenLight');
+const redLight = document.querySelector('#red');
+const orangeLight = document.querySelector('#orange');
+const greenLight = document.querySelector('#green');
 
 const btn = document.querySelector("button");
 const clockHolder = document.querySelector("span");
