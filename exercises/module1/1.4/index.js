@@ -28,19 +28,18 @@ function greenLightOn(){
     myInterval = setTimeout(orangeLightOn2,2000);
 }
 
-function orangeLight2(){
+function orangeLightOn2(){
     greenLight.style.backgroundColor = "white";
     orangeLight.style.backgroundColor = "orange";
     myInterval = setTimeout(redLightOn,2000);
 }
 
 function stopOrResumeClock() {
+    let tempInterval = myInterval;
     if (myInterval != undefined) {
       clearInterval(myInterval);
       myInterval = undefined;
     } else {
-        orangeLight.style.backgroundColor = "white";
-        redLight.style.backgroundColor = "white";
-        redLightOn;
+        myInterval = tempInterval;
     }
 }
