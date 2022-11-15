@@ -40,6 +40,11 @@ function stopOrResumeClock() {
       clearInterval(myInterval);
       myInterval = undefined;
     } else {
-        myInterval = tempInterval;
+        if(greenLight.style.backgroundColor == "green"){
+            greenLightOn();
+        }
+        if(redLight.style.backgroundColor == "red"){
+            redLightOn();
+        }
     }
 }
