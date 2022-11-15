@@ -3,7 +3,6 @@ const orangeLight = document.querySelector('#orange');
 const greenLight = document.querySelector('#green');
 
 const btn = document.querySelector("stopButton");
-const clockHolder = document.querySelector("span");
 
 btn.addEventListener("click", stopOrResumeClock);
 
@@ -36,8 +35,8 @@ function orangeLight2(){
 }
 
 function stopOrResumeClock() {
-    if (myIntervalId) {
-      clearInterval(myIntervalId);
-      myIntervalId = undefined;
+    if (myInterval) {
+      clearInterval(myInterval);
+      myInterval = undefined;
     } else redLightOn;
 }
