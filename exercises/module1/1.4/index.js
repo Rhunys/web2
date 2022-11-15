@@ -7,7 +7,7 @@ const clockHolder = document.querySelector("span");
 
 btn1.addEventListener("click", stopOrResumeClock);
 
-var myInterval;
+let myInterval;
 
 redLight();
 
