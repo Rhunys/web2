@@ -18,11 +18,11 @@ function printCurrentTime() {
     const now = new Date();
     const time = now.toLocaleTimeString();
     clockHolder.innerText = time;
-  }
+}
   
-  function stopOrResumeClock() {
+function stopOrResumeClock() {
     if (myIntervalId) {
       clearInterval(myIntervalId);
       myIntervalId = undefined;
     } else startClock();
-  }
+}
