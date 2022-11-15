@@ -9,18 +9,32 @@ btn1.addEventListener("click", stopOrResumeClock);
 
 var myInterval;
 
-startClock();
+redLight();
 
-function startClock(){
-    myInterval = setInterval(printCurrentTime, 2000);
+function redLight(){
+    orangeLight.style.backgroundColor = "white";
+    redLight.style.backgroundColor = "red";
+    myInterval = setTimeout(orangeLight,2000);
 }
 
-function printCurrentTime() {
-    const now = new Date();
-    const time = now.toLocaleTimeString();
-    clockHolder.innerText = time;
+function orangeLight1(){
+    redLight.style.backgroundColor = "white";
+    orangeLight.style.backgroundColor = "orange";
+    myInterval = setTimeout(greenLight,2000);
 }
-  
+
+function greenLight(){
+    orangeLight.style.backgroundColor = "white";
+    greenLight.style.backgroundColor = "green";
+    myInterval = setTimeout(orangeLight2,2000);
+}
+
+function orangeLight2(){
+    greenLight.style.backgroundColor = "white";
+    orangeLight.style.backgroundColor = "orange";
+    myInterval = setTimeout(redLight,2000);
+}
+
 function stopOrResumeClock() {
     if (myIntervalId) {
       clearInterval(myIntervalId);
