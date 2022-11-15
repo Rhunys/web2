@@ -1,10 +1,19 @@
-const dateTimeNow = new Date();
-const date = dateTimeNow.toLocaleDateString();
-const time = dateTimeNow.toLocaleTimeString();
-const message = "This is the best moment to have a look at this website !";
+let btn = document.querySelector('#myBtn');
+const message1 = "Bravo, bel échauffement !";
+const message2 = "Vous êtes passé maître en l'art du clic !";
+let compteur = 0;
 
-function timeAlert() {
-    alert(`${date} ${time} : ${message}`);
+btn.addEventListener('click', onClickHandlerForBtn);
+
+function onClickHandlerForBtn() {
+    if(compteur >=5 && compteur <= 9){
+        btn.innerHTML = message1;
+    } else {
+        if(compteur > 9){
+            btn.innerHTML = message2;
+        }
+    }
+    compteur++;
 }
 
 console.log(timeAlert()); 
