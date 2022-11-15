@@ -1,22 +1,28 @@
-let btn1 = document.querySelector('#myBtn1');
-let btn2 = document.querySelector('#myBtn2');
+const redLight = document.querySelector('#redLight');
+const orangeLight = document.querySelector('#orangeLight');
+const greenLight = document.querySelector('#greenLight');
 
-const message1 = "Bravo, bel échauffement !";
-const message2 = "Vous êtes passé maître en l'art du clic !";
-let compteur = 0;
-btn2.innerHTML = compteur;
+const clockHolder = document.querySelector("span");
 
-btn1.addEventListener('click', onClickHandlerForBtn);
+btn1.addEventListener("click", stopOrResumeClock);
 
-function onClickHandlerForBtn() {
-    if(compteur >=5 && compteur <= 9){
-        btn1.innerHTML = message1;
-    } else {
-        if(compteur > 9){
-            btn1.innerHTML = message2;
-        }
-    }
-    btn2.innerHTML = compteur;
-    compteur++;
+var myInterval;
 
+startClock();
+
+function startClock(){
+    myInterval = setInterval(printCurrentTime, 2000);
 }
+
+function printCurrentTime() {
+    const now = new Date();
+    const time = now.toLocaleTimeString();
+    clockHolder.innerText = time;
+  }
+  
+  function stopOrResumeClock() {
+    if (myIntervalId) {
+      clearInterval(myIntervalId);
+      myIntervalId = undefined;
+    } else startClock();
+  }
