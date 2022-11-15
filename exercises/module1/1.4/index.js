@@ -29,7 +29,7 @@ function greenLightOn(){
     myInterval = setTimeout(orangeLightOn2,2000);
 }
 
-function orangeLightOn2(){
+function orangeLight2(){
     greenLight.style.backgroundColor = "white";
     orangeLight.style.backgroundColor = "orange";
     myInterval = setTimeout(redLightOn,2000);
@@ -39,5 +39,5 @@ function stopOrResumeClock() {
     if (myIntervalId) {
       clearInterval(myIntervalId);
       myIntervalId = undefined;
-    } else startClock();
+    } else redLightOn;
 }
