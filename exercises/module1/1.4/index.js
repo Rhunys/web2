@@ -2,7 +2,7 @@ const redLight = document.querySelector('#red');
 const orangeLight = document.querySelector('#orange');
 const greenLight = document.querySelector('#green');
 
-const btn = document.querySelector("stopButton");
+const btn = document.querySelector("#stopButton");
 
 btn.addEventListener("click", stopOrResumeClock);
 
@@ -35,8 +35,12 @@ function orangeLight2(){
 }
 
 function stopOrResumeClock() {
-    if (myInterval) {
+    if (myInterval != undefined) {
       clearInterval(myInterval);
       myInterval = undefined;
-    } else redLightOn;
+    } else {
+        orangeLight.style.backgroundColor = "white";
+        redLight.style.backgroundColor = "white";
+        redLightOn;
+    }
 }
