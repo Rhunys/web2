@@ -2,6 +2,7 @@ const redLight = document.querySelector('#redLight');
 const orangeLight = document.querySelector('#orangeLight');
 const greenLight = document.querySelector('#greenLight');
 
+const btn = document.querySelector("button");
 const clockHolder = document.querySelector("span");
 
 btn1.addEventListener("click", stopOrResumeClock);
