@@ -9,6 +9,7 @@ counter.innerHTML = compteur;
 btn1.addEventListener('click', onClickHandlerForBtn);
 
 function onClickHandlerForBtn() {
+    compteur++;
     if(compteur >=5 && compteur <= 9){
         btn1.innerHTML = message1;
     } else {
@@ -17,6 +18,5 @@ function onClickHandlerForBtn() {
         }
     }
     counter.innerHTML = compteur;
-    compteur++;
-
+    
 }
