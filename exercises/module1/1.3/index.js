@@ -1,7 +1,3 @@
-let redLight = document.querySelector('#redLight');
-let orangeLight = document.querySelector('#orangeLight');
-let greenLight = document.querySelector('#greenLight');
-
 const message1 = "Bravo, bel échauffement !";
 const message2 = "Vous êtes passé maître en l'art du clic !";
 let compteur = 0;
