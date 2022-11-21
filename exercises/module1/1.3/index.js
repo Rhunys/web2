@@ -1,10 +1,10 @@
 let btn1 = document.querySelector('#myBtn1');
-let btn2 = document.querySelector('#myBtn2');
+let counter = document.querySelector('#count');
 
 const message1 = "Bravo, bel échauffement !";
 const message2 = "Vous êtes passé maître en l'art du clic !";
 let compteur = 0;
-btn2.innerHTML = compteur;
+counter.innerHTML = compteur;
 
 btn1.addEventListener('click', onClickHandlerForBtn);
 
@@ -16,7 +16,7 @@ function onClickHandlerForBtn() {
             btn1.innerHTML = message2;
         }
     }
-    btn2.innerHTML = compteur;
+    counter.innerHTML = compteur;
     compteur++;
 
 }
