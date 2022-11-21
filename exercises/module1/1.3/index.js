@@ -1,3 +1,6 @@
+let btn1 = document.querySelector('#myBtn1');
+let btn2 = document.querySelector('#myBtn2');
+
 const message1 = "Bravo, bel échauffement !";
 const message2 = "Vous êtes passé maître en l'art du clic !";
 let compteur = 0;
