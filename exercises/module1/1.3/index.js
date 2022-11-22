@@ -18,5 +18,4 @@ function onClickHandlerForBtn() {
         }
     }
     counter.innerHTML = compteur;
-    
 }
