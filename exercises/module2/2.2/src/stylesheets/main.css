@@ -1,5 +1,13 @@
 body { 
-    /*background-image : url(../img/100-Meilleurs-films-100-711-e1404337793139.jpg);*/
+    background-image : url(../img/100-Meilleurs-films-100-711-e1404337793139.jpg);
 }
 
+main{
+    background-color: white;
+    display: flex;
+}
+
+#titre{
+    margin-top: 1.5%;
+}
 

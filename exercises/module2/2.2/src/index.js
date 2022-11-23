@@ -4,7 +4,7 @@ import './stylesheets/main.css';
 import filmsImage from './img/pngtree-film-logo-design-template-vector-isolated-illustration-png-image_1693431.jpg';
 
 const title = document.querySelector('#titre');
-title.innerHTML = "myMovies Where your dreams come true";
+title.innerHTML = "myMovies";
 
 renderFilmsImage(filmsImage);
 renderFilmsText(title);
