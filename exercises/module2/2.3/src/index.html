@@ -12,19 +12,17 @@
     <main>
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="inputLines">Number of lines</label>
+          <input type="lines" class="form-control" id="lines" aria-describedby="lines" placeholder="Enter number of lines">
         </div>
+        
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="inputColumns">Number of columns</label>
+          <input type="columns" class="form-control" id="inputColumns" placeholder="Enter number of columns">
         </div>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div>
+          <button type="submit" class="btn btn-primary">Create table</button>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </main>
     <footer></footer>
